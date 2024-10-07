@@ -12,13 +12,31 @@
             margin: 0;
             text-align: center;
             font-family: Arial, sans-serif;
+            padding: 10px;
+        }
+        h1 {
+            font-size: 5vw; /* Text size responsive to viewport width */
+            margin: 0.5em;
+        }
+        a {
+            font-size: 4vw; /* Link size responsive to viewport width */
+            text-decoration: none;
+            color: blue;
+        }
+        @media (max-width: 768px) { /* For smaller screens like phones */
+            h1 {
+                font-size: 7vw; /* Increase font size for smaller devices */
+            }
+            a {
+                font-size: 6vw;
+            }
         }
     </style>
 </head>
 <body>
     <div>
         <h1>404 Error</h1>
-        <h1>This domain has expired</h1>
+        <h1>This domain is Expired</h1>
         <h1>To Continue This Website</h1>
         <a href="https://the-lamp.github.io/RKP/">CLICK HERE</a>
     </div>
