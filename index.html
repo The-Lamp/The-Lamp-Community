@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="refresh" content="5; url=https://the-lamp.github.io/RKP/" />
-    <title>Redirecting...</title>
+    <title>404 Error - Page Not Found</title>
     <style>
         body {
             display: flex;
@@ -11,34 +11,57 @@
             height: 100vh;
             margin: 0;
             text-align: center;
-            font-family: Arial, sans-serif;
-            padding: 10px;
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2; /* Light background for contrast */
+        }
+        .error-container {
+            max-width: 600px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect for realism */
+            border: 1px solid #ccc; /* Slight border for a container feel */
         }
         h1 {
-            font-size: 5vw; /* Text size responsive to viewport width */
-            margin: 0.5em;
+            font-size: 6vw; /* Responsive size */
+            color: #d9534f; /* Red color for error */
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Error shadow effect */
+            margin: 0.5em 0;
+        }
+        p {
+            font-size: 1.5vw;
+            color: #666;
+            margin-bottom: 20px;
         }
         a {
-            font-size: 4vw; /* Link size responsive to viewport width */
+            font-size: 2vw;
             text-decoration: none;
-            color: blue;
+            color: #0275d8;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid #0275d8;
+            border-radius: 5px;
+            transition: all 0.3s ease;
         }
-        @media (max-width: 768px) { /* For smaller screens like phones */
+        a:hover {
+            background-color: #0275d8;
+            color: white;
+        }
+        @media (max-width: 768px) { /* Mobile responsiveness */
             h1 {
-                font-size: 7vw; /* Increase font size for smaller devices */
+                font-size: 9vw;
             }
-            a {
-                font-size: 6vw;
+            p, a {
+                font-size: 4vw;
             }
         }
     </style>
 </head>
 <body>
-    <div>
+    <div class="error-container">
         <h1>404 Error</h1>
-        <h1>This domain is Expired</h1>
-        <h1>To Continue This Website</h1>
-        <a href="https://the-lamp.github.io/RKP/">CLICK HERE</a>
+        <p>Oops! The page you're looking for cannot be found.</p>
+        <p>This domain is expired or doesn't exist.</p>
+        <a href="https://the-lamp.github.io/RKP/">Go Back Home</a>
     </div>
 </body>
 </html>
